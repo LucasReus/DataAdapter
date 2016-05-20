@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AA3C276C-35FD-4342-871B-3466BD57D874}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAdapter</RootNamespace>
+    <AssemblyName>DataAdapter</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BancoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BancoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastrarCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastrarCompra.Designer.cs">
+      <DependentUpon>FormCadastrarCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastrarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastrarUsuario.Designer.cs">
+      <DependentUpon>FormCadastrarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCadastroAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastroAluno.Designer.cs">
+      <DependentUpon>FormCadastroAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaCompra.Designer.cs">
+      <DependentUpon>FormConsultaCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaTodosUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaTodosUsuarios.Designer.cs">
+      <DependentUpon>FormConsultaTodosUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaUsuarioAutomatico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaUsuarioAutomatico.Designer.cs">
+      <DependentUpon>FormConsultaUsuarioAutomatico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaUsuarioPorCodigo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaUsuarioPorCodigo.Designer.cs">
+      <DependentUpon>FormConsultaUsuarioPorCodigo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaUsuarioPorNome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaUsuarioPorNome.Designer.cs">
+      <DependentUpon>FormConsultaUsuarioPorNome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFoto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFoto.Designer.cs">
+      <DependentUpon>FormFoto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciaBanco.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastrarCompra.resx">
+      <DependentUpon>FormCadastrarCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastrarUsuario.resx">
+      <DependentUpon>FormCadastrarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastroAluno.resx">
+      <DependentUpon>FormCadastroAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaCompra.resx">
+      <DependentUpon>FormConsultaCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaTodosUsuarios.resx">
+      <DependentUpon>FormConsultaTodosUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaUsuarioAutomatico.resx">
+      <DependentUpon>FormConsultaUsuarioAutomatico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaUsuarioPorCodigo.resx">
+      <DependentUpon>FormConsultaUsuarioPorCodigo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaUsuarioPorNome.resx">
+      <DependentUpon>FormConsultaUsuarioPorNome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFoto.resx">
+      <DependentUpon>FormFoto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="BancoDataSet.xsc">
+      <DependentUpon>BancoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BancoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BancoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BancoDataSet.xss">
+      <DependentUpon>BancoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
